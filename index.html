@@ -29,7 +29,11 @@
         </ul>
         <div id="accordionNav">
           <div class="accordionPanel">
-            <div class="accordionPanelTab" id="eventsWeekTab" onclick="showEventsContent()">
+            <div
+              class="accordionPanelTab"
+              id="eventsWeekTab"
+              onclick="showEventsContent()"
+            >
               Events This Week
             </div>
             <div class="accordionPanelContent" id="eventsWeekContent">
@@ -65,7 +69,13 @@
             </div>
           </div>
           <div class="accordionPanel">
-            <div class="accordionPanelTab" id="pastEventsTab" onclick="showPastEvents()">Past Events</div>
+            <div
+              class="accordionPanelTab"
+              id="pastEventsTab"
+              onclick="showPastEvents()"
+            >
+              Past Events
+            </div>
             <div class="accordionPanelContent" id="pastEventsContent">
               <a href="#">
                 <img src="img/thumb-bugs.jpg" width="180" height="140" />
@@ -123,30 +133,8 @@
       </div>
     </div>
 
-    <script>
-      document.getElementById("comingUpContent").style.display = "none";
-      document.getElementById("pastEventsContent").style.display = "none";
-
-      function hidePanels() {
-        document.getElementById("comingUpContent").style.display = "none";
-        document.getElementById("pastEventsContent").style.display = "none";
-        document.getElementById("eventsWeekContent").style.display = "none";
-      }
-
-      function showComingUp() {
-        hidePanels();
-        document.getElementById("comingUpContent").style.display = "block";
-      }
-
-	  function showPastEvents() {
-		hidePanels();
-        document.getElementById("pastEventsContent").style.display = "block";
-	  }
-
-	  function showEventsContent() {
-		hidePanels();
-        document.getElementById("eventsWeekContent").style.display = "block";
-	  }
+    <script src="/js/script.js">
+      
     </script>
   </body>
 </html>
